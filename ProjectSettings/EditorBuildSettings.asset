@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7dca390dbc7d511499426d7f3e44937d
   - enabled: 1
-    path: Assets/RPGPP_LT/Scene/Village.unity
+    path: Assets/Scenes/Village.unity
     guid: 50d785ad5496e8448855c11e508aa96d
-  - enabled: 0
-    path: Assets/Scenes/Scene1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/UnderWorld.unity
+    guid: 3f59e577dcb68e1459a5258a589ed8e8
   m_configObjects: {}

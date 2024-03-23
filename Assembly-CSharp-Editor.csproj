@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1B33342B-1957-B517-A1CB-1A50A4E0F1B9}</ProjectGuid>
+    <ProjectGuid>{BCC309C3-67CD-2530-C344-E8CD0401AB2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -307,6 +307,9 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -812,47 +815,47 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{442B4A0E-E6EE-B820-4E0C-E1D11D3FB26C}</Project>
+      <Project>{643D7155-601D-9A6E-982B-C14888AED79A}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{E04E6139-732F-A19E-4918-DDD9772357AE}</Project>
+      <Project>{07A1C359-7E65-6371-BC75-AB25FF411BCB}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{5457C7A5-6CE7-22C0-601E-EF9C0335048B}</Project>
+      <Project>{027557BF-EB5D-6D62-4F53-39B0FED21434}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{8B417162-F44F-4666-9E0C-BCBBBD45C022}</Project>
+      <Project>{EE7DE6FE-2FEF-02EC-A57B-A9DF9A98C770}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{856BD2AB-EE03-6D7D-B4B5-416A1C1782EE}</Project>
+      <Project>{C4E40D10-40A5-40D4-6888-4D896B77F7F3}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{F086FC7E-BE1F-F5DD-70B7-5F9A27E5960B}</Project>
+      <Project>{5DB85A6D-8CB2-3A1E-1A51-32C2CAC506D9}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{75DA5CE8-1F0C-6EF2-E037-3F3738B1E3D4}</Project>
+      <Project>{D27BA9A4-89DD-2EEC-94B5-7755766A8B89}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{8D9C39B7-2A64-5C64-11B0-8B4B97465D70}</Project>
+      <Project>{0DC65BF7-AF00-EEFC-4BF4-204B7AC95D26}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{13FD66AD-DDA9-E167-7D2E-529021AC9AEE}</Project>
+      <Project>{D54BE0F3-8546-54B7-0321-28FFD3AE70E7}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{1EEB9FAC-5EA7-D270-DCE1-E18C3692BA90}</Project>
+      <Project>{CF3C6B91-6920-CBFC-6F00-50C0B2B3F6FD}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{19CFC81C-7FBE-6748-334C-BE827AAD6634}</Project>
+      <Project>{A11F7A4C-63BF-ED8B-8527-CAC0A838742E}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
   </ItemGroup>

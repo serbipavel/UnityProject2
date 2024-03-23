@@ -9,21 +9,18 @@ using TMPro;
 
 public class MenuManager : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    public TMP_InputField CreateInput;
-    public TMP_InputField JoinInput;
-
     public void CreateRoom()
     {
+        int roomName = Random.Range(0,100);
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 4;
-        PhotonNetwork.CreateRoom(CreateInput.text, roomOptions);
+        PhotonNetwork.CreateRoom(roomName.ToString(), roomOptions);
     }
 
     // Update is called once per frame
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom(JoinInput.text);
+        PhotonNetwork.JoinRandomRoom();
     }
 
     public override void OnJoinedRoom()
