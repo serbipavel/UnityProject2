@@ -1,9 +1,10 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class teleport_Village : MonoBehaviour
+public class teleport_Village : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,8 @@ public class teleport_Village : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            SceneManager.LoadScene("Village");
+            //Debug.Log("Касание");
+            PhotonNetwork.LoadLevel("Village");
         }
     }
 }
