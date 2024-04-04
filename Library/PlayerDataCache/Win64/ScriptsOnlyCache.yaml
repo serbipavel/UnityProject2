@@ -4,10 +4,13 @@ ScriptsOnlyBuild:
     - CamMovement
     - GameSystem
     - IsMine
+    - MenuManager
     - PlayerMovement
     - PlayerRay
     - SoundController
     - connection
+    - teleport_Under
+    - teleport_Village
     - textAnimation
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -36,9 +39,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -97,65 +97,17 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: CreateRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: CreateRoom
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: JoinRoom
   sceneClasses:
-    Assets/RPGPP_LT/Scene/Village.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1934}
-    - Class: 114
-      Script: {instanceID: 3212}
-    - Class: 114
-      Script: {instanceID: 3912}
-    - Class: 114
-      Script: {instanceID: 6694}
-    - Class: 114
-      Script: {instanceID: 26014}
-    - Class: 114
-      Script: {instanceID: 26146}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
-      Script: {instanceID: 0}
-    - Class: 136
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Loading.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -216,21 +168,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 3910}
+    - Class: 114
+      Script: {instanceID: 4110}
     - Class: 114
       Script: {instanceID: 4112}
     - Class: 114
-      Script: {instanceID: 4114}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4444}
     - Class: 114
-      Script: {instanceID: 4446}
+      Script: {instanceID: 4728}
     - Class: 114
-      Script: {instanceID: 4730}
+      Script: {instanceID: 5196}
     - Class: 114
       Script: {instanceID: 5454}
     - Class: 114
@@ -256,23 +210,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6728}
     - Class: 114
-      Script: {instanceID: 7368}
+      Script: {instanceID: 7370}
     - Class: 114
-      Script: {instanceID: 7780}
+      Script: {instanceID: 7782}
     - Class: 114
-      Script: {instanceID: 7920}
+      Script: {instanceID: 7922}
     - Class: 114
-      Script: {instanceID: 8190}
+      Script: {instanceID: 8192}
     - Class: 114
-      Script: {instanceID: 8310}
+      Script: {instanceID: 8312}
     - Class: 114
-      Script: {instanceID: 8442}
+      Script: {instanceID: 8444}
     - Class: 114
-      Script: {instanceID: 8780}
+      Script: {instanceID: 8784}
     - Class: 114
-      Script: {instanceID: 25686}
-    - Class: 114
-      Script: {instanceID: 26014}
+      Script: {instanceID: 43486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -331,9 +283,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3306}
+      Script: {instanceID: 3304}
+    - Class: 114
+      Script: {instanceID: 3872}
     - Class: 114
       Script: {instanceID: 5548}
     - Class: 114
@@ -342,8 +296,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6356}
     - Class: 114
       Script: {instanceID: 6714}
-    - Class: 114
-      Script: {instanceID: 29600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -359,6 +311,118 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/UnderWorld.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1934}
+    - Class: 114
+      Script: {instanceID: 3210}
+    - Class: 114
+      Script: {instanceID: 3910}
+    - Class: 114
+      Script: {instanceID: 5196}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 6750}
+    - Class: 114
+      Script: {instanceID: 8704}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Village.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1934}
+    - Class: 114
+      Script: {instanceID: 2616}
+    - Class: 114
+      Script: {instanceID: 3210}
+    - Class: 114
+      Script: {instanceID: 3910}
+    - Class: 114
+      Script: {instanceID: 5196}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 6750}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -600,7 +664,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: teleport
+    className: teleport_Under
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -661,12 +725,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CountOfPlayersProperty
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: teleport_Village
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -927,7 +985,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 79d29bbf95ebb674cec9f90e3e9a37f9
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuManager
@@ -1243,6 +1301,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Procedural
     className: ProceduralController
+  - hash:
+      serializedVersion: 2
+      Hash: 506f6040961cbd0718a7f34ff8fc0f8e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IsMine
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1567,6 +1631,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 83e769eee07fc231384c812eedbb8224
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameSystem
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -2055,6 +2125,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: teleport_Village
+  - hash:
+      serializedVersion: 2
       Hash: e4316571779021b969790af4a77452dd
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Asteroids
@@ -2095,21 +2171,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 506f6040961cbd0718a7f34ff8fc0f8e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IsMine
-  - hash:
-      serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/Loading.unity
   - Assets/Scenes/Menu.unity
-  - Assets/RPGPP_LT/Scene/Village.unity
-  playerPath: E:/GameProjects/UnityStart/Pr2_Test/Project_2.exe
+  - Assets/Scenes/Village.unity
+  - Assets/Scenes/UnderWorld.unity
+  playerPath: D:/UnityStart/Pavel/Builded/Pr 2/Project_2.exe
