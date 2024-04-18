@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6B258859-B6ED-0948-FCA1-FBF734400479}</ProjectGuid>
+    <ProjectGuid>{9E6AB6F6-91CC-EB29-50BB-5D1D4D4E9547}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\Scripts\CamMovement.cs" />
     <Compile Include="Assets\Scripts\MySelectable.cs" />
+    <Compile Include="Assets\Scripts\AnimationControl.cs" />
     <Compile Include="Assets\IsMine.cs" />
     <Compile Include="Assets\Scripts\Sounds.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\Scripts\SoundController.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\StartVillage.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\teleport_Village.cs" />
   </ItemGroup>
@@ -826,43 +828,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{E17A9729-DE84-476C-7035-0C66C537AB49}</Project>
+      <Project>{B97AB4A8-7D7B-4CD5-4E39-C59A705B54FC}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{8205E569-ED34-8357-453B-61C2BD3D01B5}</Project>
+      <Project>{75A7C0EC-217E-FCE0-92B0-B105E331A3DD}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{034C6D54-1C58-8C2C-E835-59DEEC9D7E69}</Project>
+      <Project>{DBF5AFF3-1A19-45CD-CB6C-19E285C8E68B}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{D0AA5825-789A-B29C-4FAE-A583AD9A1851}</Project>
+      <Project>{DBC191ED-E861-AE2E-EED8-313AB1BC92C7}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{270B795B-5934-44D0-D940-A9973014C06D}</Project>
+      <Project>{B963EEAB-8544-BA63-4A77-4533649C3AA5}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{E31459AD-BB1B-4AEB-728D-CDC7D157C6C6}</Project>
+      <Project>{82FE1A4D-D7F7-74BB-A96B-61F6EB8BC754}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{A4F3BDB3-C2AB-EEEC-EF05-7C89AEE0BD4F}</Project>
+      <Project>{4933C57B-88EE-147B-BA1F-5A87F878ADF0}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{A738DBF8-D22B-EF25-BECC-FB61596B725E}</Project>
+      <Project>{C6B1E282-5756-FA57-87E1-1529B42F6244}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{B26F9544-41C9-4D17-27D6-91EDB11B711D}</Project>
+      <Project>{CD2EF698-8D64-72AD-A805-2CE68042B528}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{886CB4B2-6B29-6FBA-0A77-68158B41EFCD}</Project>
+      <Project>{0AD6715F-1C65-193C-B84D-77BDB7254F9D}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
   </ItemGroup>

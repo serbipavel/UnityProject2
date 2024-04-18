@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 1329902947}
   - component: {fileID: 1329902946}
   m_Layer: 5
-  m_Name: Create
+  m_Name: PlayOffline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -906,7 +906,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1019565077}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: CreateRoom
+        m_MethodName: StartSinglePlayerGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1208,7 +1208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1019565077}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: CreateRoom
+        m_MethodName: StartMultiplayerGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1342,7 +1342,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1019565077}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: JoinRoom
+        m_MethodName: JoinMultiplayerGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

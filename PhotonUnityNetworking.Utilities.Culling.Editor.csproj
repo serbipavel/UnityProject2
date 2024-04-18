@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8205E569-ED34-8357-453B-61C2BD3D01B5}</ProjectGuid>
+    <ProjectGuid>{75A7C0EC-217E-FCE0-92B0-B105E331A3DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonUnityNetworking.Utilities.Culling.Editor</AssemblyName>
@@ -310,9 +310,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -746,7 +743,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{A4F3BDB3-C2AB-EEEC-EF05-7C89AEE0BD4F}</Project>
+      <Project>{4933C57B-88EE-147B-BA1F-5A87F878ADF0}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
   </ItemGroup>

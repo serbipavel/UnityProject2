@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{270B795B-5934-44D0-D940-A9973014C06D}</ProjectGuid>
+    <ProjectGuid>{B963EEAB-8544-BA63-4A77-4533649C3AA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PunDemos.DemoHubEditor</AssemblyName>
@@ -310,9 +310,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -746,11 +743,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{A738DBF8-D22B-EF25-BECC-FB61596B725E}</Project>
+      <Project>{C6B1E282-5756-FA57-87E1-1529B42F6244}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{E31459AD-BB1B-4AEB-728D-CDC7D157C6C6}</Project>
+      <Project>{82FE1A4D-D7F7-74BB-A96B-61F6EB8BC754}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
   </ItemGroup>
