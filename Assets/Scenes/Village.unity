@@ -7097,7 +7097,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eabb0faaf5234bd48974327508f8047d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6216443833961898722, guid: 07920a4ec590d5942a870765e9ba2ef8, type: 3}
+  player: {fileID: 0}
+  players:
+  - {fileID: 7705347794246074575, guid: 138ca6230ed0fa649a174358e478c1cf, type: 3}
+  - {fileID: 7105631519091938813, guid: c8d03702d51ee4e4684042e9dd1a1e3b, type: 3}
+  - {fileID: 1298936093823170959, guid: 2d22ed6d32a2e5d48a144ce27136a1d9, type: 3}
+  - {fileID: 2137261142042684846, guid: 4be134cbb888edd40b2fa7b1043f191b, type: 3}
+  AdvMale: {fileID: 0}
+  AdvFemale: {fileID: 0}
+  Punk: {fileID: 0}
+  ArmoredFemale: {fileID: 0}
 --- !u!4 &965939138
 Transform:
   m_ObjectHideFlags: 0

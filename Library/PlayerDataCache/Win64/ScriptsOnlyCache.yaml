@@ -2175,4 +2175,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Village.unity
   - Assets/Scenes/UnderWorld.unity
-  playerPath: E:/GameProjects/UnityStart/Pr2_Test/Project_2_Data/Project_2.exe
+  playerPath: D:/UnityStart/Pavel/Pr2_Build/Project_2.exe

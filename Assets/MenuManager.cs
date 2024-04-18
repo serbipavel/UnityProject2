@@ -53,6 +53,6 @@ public class MenuManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         // Загрузка сцены "Village" при подключении к сети
-        SceneManager.LoadScene("Village");
+        PhotonNetwork.LoadLevel("Village");
     }
 }
