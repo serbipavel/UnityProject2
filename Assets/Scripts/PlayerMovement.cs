@@ -15,18 +15,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject maincamera;
     //Animator anim;
     PhotonView view;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-       view = GetComponent<PhotonView>();
-        
+        view = GetComponent<PhotonView>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!view.IsMine) return;
         //Способ 3 (с анимациями)
         Vector3 movement = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
@@ -36,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
             anim.SetBool("IsRunning", false);*/
         }
-            
+
 
         if (Input.GetKey(KeyCode.S))
         {
@@ -45,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
             anim.SetBool("IsRunning", false);*/
         }
-            
+
         if (Input.GetKey(KeyCode.A))
         {
             movement -= Camera.main.transform.right;
@@ -53,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
             anim.SetBool("IsRunning", false);*/
         }
-            
+
         if (Input.GetKey(KeyCode.D))
         {
             movement += Camera.main.transform.right;
@@ -82,26 +81,26 @@ public class PlayerMovement : MonoBehaviour
         movement.Normalize();
 
         /*rb.velocity = new Vector3(xMove*speed, 0, zMove*speed);*/
-        rb.velocity = new Vector3(movement.x*speed, rb.velocity.y,movement.z*speed);
-       /* if (!Input.GetKey(KeyCode.W) &&
-            !Input.GetKey(KeyCode.A) &&
-            !Input.GetKey(KeyCode.S) &&
-            !Input.GetKey(KeyCode.D) &&
-            !Input.GetKey(KeyCode.LeftShift))
-        {
-            anim.SetBool("IsIdle", true);
-            anim.SetBool("IsWalking", false);
-            anim.SetBool("IsRunning", false);
-        }*/
-        
-        
-        if (Input.GetKeyDown(KeyCode.Space) && numOfJumps>0)
+        rb.velocity = new Vector3(movement.x * speed, rb.velocity.y, movement.z * speed);
+        /* if (!Input.GetKey(KeyCode.W) &&
+             !Input.GetKey(KeyCode.A) &&
+             !Input.GetKey(KeyCode.S) &&
+             !Input.GetKey(KeyCode.D) &&
+             !Input.GetKey(KeyCode.LeftShift))
+         {
+             anim.SetBool("IsIdle", true);
+             anim.SetBool("IsWalking", false);
+             anim.SetBool("IsRunning", false);
+         }*/
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && numOfJumps > 0)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
             rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
             numOfJumps--;
         }
-            
+
     }
     private void OnCollisionEnter(Collision collision)
     {
